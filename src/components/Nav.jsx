@@ -7,7 +7,7 @@ import { LOGOUT } from "../redux/const/actionsTypes";
 import { useDispatch } from "react-redux";
 import { connect } from "react-redux";
 
-const Nav = (props) => {
+const Nav = () => {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
   const toggleDropdown = () => {
     setDropdownOpen(!isDropdownOpen);

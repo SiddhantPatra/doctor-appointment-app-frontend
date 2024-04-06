@@ -5,14 +5,24 @@ import {
   Linkedin,
   Twitter,
 } from "../assets/icons/Social Media Icon Square";
+import PropTypes from 'prop-types';
 
+DoctorCard.propTypes = {
+  imgURL: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  specialty: PropTypes.string.isRequired,
+  about: PropTypes.string.isRequired,
+  avgRating: PropTypes.number.isRequired,
+  totalRating: PropTypes.number.isRequired,
+  hospital: PropTypes.string.isRequired,
+};
 const DoctorCard = ({
   imgURL,
   name,
-  specialty,
-  about,
+  specialty, 
   avgRating,
-  totalRating,hospital
+  totalRating,
+  hospital,
 }) => {
   return (
     <div className=" flex flex-1 flex-col hover:cursor-pointer  items-center max-sm:flex-col rounded-xl object-fill shadow-md m-4 p-8 w-sm max-sm:w-full lg:gap-4 ">

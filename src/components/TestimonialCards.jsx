@@ -1,5 +1,12 @@
 import { star } from "../assets/icons";
+import PropTypes from 'prop-types';
 
+TestimonialCards.propTypes = {
+  rating: PropTypes.number.isRequired,
+  feedback: PropTypes.string.isRequired,
+  customerName: PropTypes.string.isRequired,
+  imgURL: PropTypes.string.isRequired,
+};
 const TestimonialCards = ({ rating, feedback, customerName, imgURL }) => {
   return (
     <div>

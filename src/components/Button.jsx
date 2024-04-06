@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 const Button = ({
     label,
     iconURL,
@@ -27,5 +29,12 @@ const Button = ({
       </button>
     );
   };
-  
+  Button.propTypes = {
+    label: PropTypes.string.isRequired,
+    iconURL: PropTypes.string.isRequired, // Add this line for iconURL prop validation
+    backgroundColor: PropTypes.string,
+    textColor: PropTypes.string,
+    borderColor: PropTypes.string,
+    fullWidth: PropTypes.bool,
+  };
   export default Button;

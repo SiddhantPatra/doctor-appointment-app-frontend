@@ -7,9 +7,9 @@ import {
 import PropTypes from 'prop-types';
 
 TeamCard.propTypes = {
-  imgURL: PropTypes.any,
-  name: PropTypes.string,
-  designation: PropTypes.string,
+  imgURL: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  designation: PropTypes.string.isRequired,
   about: PropTypes.string,
 };
 const TeamCard = ({ imgURL, name, designation, about }) => {
