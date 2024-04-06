@@ -7,5 +7,6 @@ export default defineConfig({
   build: {
     chunkSizeWarningLimit: 1000, // Adjust the limit as needed
   },
+  base: '/doctor-appointment-app-frontend/'
 })
  
