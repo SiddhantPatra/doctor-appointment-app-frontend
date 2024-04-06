@@ -6,12 +6,6 @@ import {
 } from "../assets/icons/Social Media Icon Square";
 import PropTypes from 'prop-types';
 
-TeamCard.propTypes = {
-  imgURL: PropTypes.any,
-  name: PropTypes.string,
-  designation: PropTypes.string,
-  about: PropTypes.string,
-};
 const TeamCard = ({ imgURL, name, designation, about }) => {
   return (
     <div className=" flex flex-1 flex-col  items-center max-sm:flex-col rounded-xl object-fill shadow-md m-4 p-8 w-sm max-sm:w-full lg:gap-4 ">
@@ -35,4 +29,10 @@ const TeamCard = ({ imgURL, name, designation, about }) => {
   );
 };
 
+TeamCard.propTypes = {
+  imgURL: PropTypes.any,
+  name: PropTypes.string,
+  designation: PropTypes.string,
+  about: PropTypes.string,
+};
 export default TeamCard;

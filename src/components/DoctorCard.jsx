@@ -7,15 +7,6 @@ import {
 } from "../assets/icons/Social Media Icon Square";
 import PropTypes from 'prop-types';
 
-DoctorCard.propTypes = {
-  imgURL: PropTypes.any,
-  name: PropTypes.string,
-  specialty: PropTypes.string,
-  about: PropTypes.string,
-  avgRating: PropTypes.number,
-  totalRating: PropTypes.number,
-  hospital: PropTypes.string,
-};
 const DoctorCard = ({
   imgURL,
   name,
@@ -54,4 +45,13 @@ const DoctorCard = ({
   );
 };
 
+DoctorCard.propTypes = {
+  imgURL: PropTypes.any,
+  name: PropTypes.string,
+  specialty: PropTypes.string,
+  about: PropTypes.string,
+  avgRating: PropTypes.number,
+  totalRating: PropTypes.number,
+  hospital: PropTypes.string,
+};
 export default DoctorCard;
