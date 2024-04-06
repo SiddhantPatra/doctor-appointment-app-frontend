@@ -26,9 +26,9 @@ function Home() {
       <section className="xl:padding-l wide:padding-r padding-b">
         <Team />
       </section>
-      <section className="xl:padding-l wide:padding-r padding-b">
+      {/* <section className="xl:padding-l wide:padding-r padding-b">
         <Testimonials />
-      </section>
+      </section> */}
 
       <Footer />
     </main>
