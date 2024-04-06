@@ -3,7 +3,7 @@ import Nav from "../components/Nav";
 import SearchDoc from "../sections/SearchDoc";
 import Stats from "../sections/Stats";
 import Footer from "../components/Footer";
-// import Testimonials from "../sections/Testimonials";
+import Testimonials from "../sections/Testimonials";
 import ChooseUs from "../sections/ChooseUs";
 import Team from "../sections/Team";
 
@@ -26,9 +26,9 @@ function Home() {
       <section className="xl:padding-l wide:padding-r padding-b">
         <Team />
       </section>
-      {/* <section className="xl:padding-l wide:padding-r padding-b">
+      <section className="xl:padding-l wide:padding-r padding-b">
         <Testimonials />
-      </section> */}
+      </section>
 
       <Footer />
     </main>
