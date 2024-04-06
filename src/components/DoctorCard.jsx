@@ -8,13 +8,13 @@ import {
 import PropTypes from 'prop-types';
 
 DoctorCard.propTypes = {
-  imgURL: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
-  specialty: PropTypes.string.isRequired,
-  about: PropTypes.string.isRequired,
-  avgRating: PropTypes.number.isRequired,
-  totalRating: PropTypes.number.isRequired,
-  hospital: PropTypes.string.isRequired,
+  imgURL: PropTypes.any,
+  name: PropTypes.string,
+  specialty: PropTypes.string,
+  about: PropTypes.string,
+  avgRating: PropTypes.number,
+  totalRating: PropTypes.number,
+  hospital: PropTypes.string,
 };
 const DoctorCard = ({
   imgURL,

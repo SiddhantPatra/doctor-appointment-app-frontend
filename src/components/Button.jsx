@@ -30,11 +30,11 @@ const Button = ({
     );
   };
   Button.propTypes = {
-    label: PropTypes.string.isRequired,
-    iconURL: PropTypes.string.isRequired, // Add this line for iconURL prop validation
-    backgroundColor: PropTypes.string,
-    textColor: PropTypes.string,
-    borderColor: PropTypes.string,
-    fullWidth: PropTypes.bool,
+    label: PropTypes.any,
+    iconURL: PropTypes.any, // Add this line for iconURL prop validation
+    backgroundColor: PropTypes.any,
+    textColor: PropTypes.any,
+    borderColor: PropTypes.any,
+    fullWidth: PropTypes.any,
   };
   export default Button;
