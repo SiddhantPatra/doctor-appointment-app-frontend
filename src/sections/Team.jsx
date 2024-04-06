@@ -1,4 +1,4 @@
-import TeamCard from "../components/teamCard";
+import TeamCard from "../components/TeamCard";
 import { team } from "../constants";
 
 const Team = () => {
@@ -12,7 +12,9 @@ const Team = () => {
         malesuada quam commodo id integer nam.
       </p>
       <div className=" grid grid-cols-1 lg:grid-cols-3 gap-5">
-        {team.map((team) =>(<TeamCard key={team.imgURL} {...team}/>))}
+        {team.map((team) => (
+          <TeamCard key={team.imgURL} {...team} />
+        ))}
       </div>
     </section>
   );
