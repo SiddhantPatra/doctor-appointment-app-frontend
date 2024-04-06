@@ -5,7 +5,7 @@ TestimonialCards.propTypes = {
   rating: PropTypes.number.isRequired,
   feedback: PropTypes.string.isRequired,
   customerName: PropTypes.string.isRequired,
-  imgURL: PropTypes.string.isRequired,
+  imgURL: PropTypes.any.isRequired,
 };
 const TestimonialCards = ({ rating, feedback, customerName, imgURL }) => {
   return (
