@@ -7,7 +7,7 @@ import {
 import PropTypes from 'prop-types';
 
 TeamCard.propTypes = {
-  imgURL: PropTypes.string,
+  imgURL: PropTypes.any,
   name: PropTypes.string,
   designation: PropTypes.string,
   about: PropTypes.string,
