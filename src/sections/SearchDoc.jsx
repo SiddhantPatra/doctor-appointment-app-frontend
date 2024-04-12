@@ -14,7 +14,7 @@ const SearchDoc = () => {
                 placeholder="Name "
               />
               <input
-                className='block w-48 rounded-md border-0 border-gray-800 ring-1 py-1.5  mr-16  pl-7 px-2 text-gray-900 ring-1 ring-inset ring-gray-800 placeholder:text-gray-400  sm:text-sm sm:leading-6"'
+                className='block w-48 rounded-md border-0 border-gray-800  py-1.5  mr-16  pl-7 px-2 text-gray-900 ring-1 ring-inset ring-gray-800 placeholder:text-gray-400  sm:text-sm sm:leading-6"'
                 type="text"
                 placeholder="Speciality"
               />
