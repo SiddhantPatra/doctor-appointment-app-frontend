@@ -1,6 +1,6 @@
-import { arrowRight } from "../assets/icons";
+// import { arrowRight } from "../assets/icons";
 import { Group3 } from "../assets/images";
-import Button from "../components/Button";
+// import Button from "../components/Button";
 import SplitType from "split-type";
 
 import { gsap } from "gsap";
@@ -64,9 +64,9 @@ const Hero = () => {
           medical professionals, cutting-edge technology, and compassionate
           approach make us a leader in the healthcare industry
         </p>
-        <Button label="Appointment" iconURL={arrowRight}>
-          {/* <img /> */}
-        </Button>
+
+        <a className="bg-teal-600 hover:bg-teal-700 py-3 px-8 rounded-lg text-slate-100 border-b-4 border-teal-700 hover:border-teal-800 transition duration-300" href="">Book an Appointment</a>
+        
       </div>
       <div className="relative flex-1 flex justify-center items-center xl:min-h-screen max-xl:py-40 bg-[#ECECEC] bg-hero bg-no-repeat bg-border-none  bg-center">
         <img
