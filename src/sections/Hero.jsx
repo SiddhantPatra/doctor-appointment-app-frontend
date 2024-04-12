@@ -1,7 +1,11 @@
 import { arrowRight } from "../assets/icons";
 import { Group3 } from "../assets/images";
 import Button from "../components/Button";
+import SplitType from 'split-type'
+ 
 
+const dynamicText = new SplitType('#target' ,{ types: 'chars' })
+console.log(dynamicText.chars)
 const Hero = () => {
   return (
     <section
@@ -12,7 +16,7 @@ const Hero = () => {
         <h1 className="mt-10 font-palanquin sm:text-4xl  max-sm:leading[41] font-bold">
           <span className="xl:bg-[#ECECEC] xl:whitespace-nowrap relative z-10 pr-10">
             Providing Quality{" "}
-            <span className="text-green-500 inline-block mt-3">
+            <span className="text-green-500 inline-block mt-3 animate-text-slide" id="target">
               {" "}
               Healthcare
             </span>{" "}
