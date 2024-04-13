@@ -1,5 +1,15 @@
 import TestimonialCards from "../components/TestimonialCards";
 import { testimonials } from "../constants";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
+
+// import required modules
+import { EffectCoverflow, Pagination, Autoplay } from "swiper/modules";
 
 const Testimonials = () => {
   return (
@@ -8,11 +18,32 @@ const Testimonials = () => {
 
       <p className="text-center text-sm pt-0">
         Lorem ipsum dolor sit amet consectetur adipiscing elit semper dalar
-        elementum tempus hac tellus libero accumsan. 
+        elementum tempus hac tellus libero accumsan.
       </p>
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
-      {testimonials.map((testimonial) => (
-      <TestimonialCards key={testimonial.imgURL} {...testimonial}/> ))}
+      {/* <div className="grid grid-cols-1 lg:grid-cols-3 gap-5"> */}
+      <div className="object-contain gap-5">
+        <Swiper
+          effect={"coverflow"}
+          grabCursor={true}
+          centeredSlides={true}
+          slidesPerView={"auto"}
+          coverflowEffect={{
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+          }}
+          pagination={true}
+          modules={[EffectCoverflow, Pagination, Autoplay]}
+          className="mySwiper"
+        >
+          {testimonials.map((testimonial) => (
+            <SwiperSlide key={testimonial.imgURL} style={{ width: "30%" }}  >
+              <TestimonialCards key={testimonial.imgURL} {...testimonial} />
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
     </section>
   );
