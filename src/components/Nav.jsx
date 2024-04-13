@@ -45,10 +45,9 @@ const Nav = () => {
         </Link>
         <ul className="flex-1 flex justify-center items-center gap-16 max-lg:hidden">
           {navLinks.map((item) => (
-            <li key={item.label}>
+            <li key={item.label} className="font-montserrat leading-normal text-lg text-slate-gray transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-150  duration-300 hover:text-green-700  hover:transition hover:ease-in-out">
               <Link
-                to={item.href}
-                className="font-montserrat leading-normal text-lg text-slate-gray"
+                to={item.href} 
               >
                 {item.label}
               </Link>
