@@ -7,19 +7,19 @@ const Stats = () => {
       <div className="flex flex-1 justify-center gap-20 py-10 mb-4 mt-4 ">
         <div className="block text-center">
           <h1 className="text-green-600 text-4xl">
-          <CountUp end={99} />%</h1>
+          <CountUp end={99} duration={10} />%</h1>
           <p>Customer satisfaction</p>
         </div>
         <div className="block text-center">
-          <h1 className="text-green-600 text-4xl">15k</h1>
+          <h1 className="text-green-600 text-4xl"><CountUp end={15} duration={5} />k</h1>
           <p>Online Patients</p>
         </div>
         <div className="block text-center">
-          <h1  className="text-green-600 text-4xl">200+</h1>
+          <h1  className="text-green-600 text-4xl"><CountUp end={200} duration={10} />+</h1>
           <p>Doctors</p>
         </div>
         <div className="block text-center">
-          <h1  className="text-green-600 text-4xl">240%</h1>
+          <h1  className="text-green-600 text-4xl"><CountUp end={240} duration={5} />%</h1>
           <p>Growth</p>
         </div>
       </div>
