@@ -137,39 +137,40 @@ export const testimonials = [
 
 export const team = [
   {
-    imgURL: user1,
+    id:1,
+    imgURL: doc5,
     name: "Morich Brown",
     designation: "CEO & Co-Founder",
     about:
       "Lorem ipsum dolor sit amet consecte adipiscing elit amet hendrerit pretium nulla sed enim iaculis mi. ",
   },
-  {
-    imgURL: user2,
+  {id:2,
+    imgURL: doc5,
     name: "Andy Smith", 
     designation: "dental specialist",
     about:"Lorem ipsum dolor sit amet consecte adipiscing elit amet hendrerit ",
   },
-  {
-    imgURL: user3,
+  {id:3,
+    imgURL: doc5,
     name: "Sophia R.",
     rating: 4.5,
     about:
       "Lorem ipsum dolor sit amet consecte adipiscing elit amet hendrerit pretium nulla sed enim iaculis mi. ",
   },
-  {
-    imgURL: testimonial1,
+  {id:4,
+    imgURL: doc5,
     name: "Andy Smith", 
     designation: "dental specialist",
     about:"Lorem ipsum dolor sit amet consecte adipiscing elit amet hendrerit pretium nulla sed enim iaculis mi. ",
   },
-  {
-    imgURL: testimonial1,
+  {id:5,
+    imgURL: doc5,
     name: "Andy Smith", 
     designation: "dental specialist",
     about:"Lorem ipsum dolor sit amet consecte adipiscing elit amet hendrerit pretium nulla sed enim iaculis mi. ",
   },
-  {
-    imgURL: testimonial1,
+  {id:6,
+    imgURL: doc5,
     name: "Andy Smith", 
     designation: "dental specialist",
     about:"Lorem ipsum dolor sit amet consecte adipiscing elit amet hendrerit mi. ",

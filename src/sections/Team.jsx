@@ -1,7 +1,40 @@
 import TeamCard from "../components/TeamCard";
 import { team } from "../constants";
-import "../src/carousal/css/styles.css"
+import Glide from "@glidejs/glide";
+import "../assets/carousal/css/styles.css";
+import { useEffect } from "react";
+
 const Team = () => {
+  useEffect(() => {
+    const slider = new Glide(".glide-08", {
+      type: "carousel",
+      focusAt: 1,
+      animationDuration: 4000,
+      autoplay: 4500,
+      autoplay: true,
+      rewind: true,
+      perView: 4,
+      gap: 0,
+      classes: {
+        nav: {
+          active: "[&>*]:bg-wuiSlate-700",
+        },
+      },
+      breakpoints: {
+        1024: {
+          perView: 4,
+        },
+        640: {
+          perView: 1,
+        },
+      },
+    }).mount()
+
+    return () => {
+      slider.destroy()
+    }
+  }, [])
+
   return (
     <section className="lg:my-4 container">
       <h1 className="text-center text-teal-600 text-4xl">
@@ -11,21 +44,21 @@ const Team = () => {
         Lorem ipsum dolor sit amet consectetur adipiscing elit volutpat gravida
         malesuada quam commodo id integer nam.
       </p>
-      <div className="card__container">
-            <article className="card__article">
-               <img src="assets/img/landscape-1.png" alt="image" className="card__img" />
-
-               <div className="card__data">
-                  <span className="card__description">Vancouver Mountains, Canada</span>
-                  <h2 className="card__title">The Great Path</h2>
-                  <a href="#" className="card__button">Read More</a>
-               </div>
-            </article>
-            </div>
-      <div className=" grid grid-cols-1 lg:grid-cols-3 gap-5">
-        {team.map((team) => (
-          <TeamCard key={team.imgURL} {...team} />
-        ))}
+      <div className=" w-screen">
+        <div className="glide-08  w-screen">
+        <div data-glide-el="track">
+          <ul className="whitespace-no-wrap flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform] relative flex w-full overflow-hidden p-0 pb-12">
+           
+              {team.map((team) => (
+                <li key={team.id} className="">
+                  <div className="h-5/6 w-4/6">
+                    <TeamCard key={team.id} {...team} />
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
   );
