@@ -4,7 +4,7 @@ import { footerLinks, socialMedia } from "../constants";
 
 const Footer = () => {
   return (
-    <footer className=" w-screen ">
+    <footer className=" w-full ">
       <div className="flex justify-around items-start py-8 bg-teal-700 gap-20 flex-wrap max-lg:flex-col p-3 ">
         <div className="flex flex-col items-start">
           <div className="flex flex-row items-center">

@@ -3,7 +3,7 @@ import Button from "../components/Button";
 
 const ChooseUs = () => {
   return (
-    <section>
+    <section className="w-full flex xl:flex-row flex-col justify-center  max-container">
       <div className="flex flex-row max-sm:flex-col-reverse flex-1 my-2 py-8 max-sm:py-1">
         <div className="flex flex-col flex-1 justify-center max-sm:items-center max-sm:px-8 max-sm:my-8 gap-10 ">
           <h1 className="text-2xl text-teal-600 text-montserrat  ">
