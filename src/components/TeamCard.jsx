@@ -40,26 +40,25 @@ const TeamCard = ({ imgURL, name, designation, about }) => {
        */}
 
       {/* <div className="h-full w-full"> */}
-      <div className=" flex flex-1 flex-col overflow-hidden rounded-xl object-fill shadow-md mt-4 p-8 w-full max-sm:w-full  bg-white text-slate-500 shadow-2xl shadow-slate-200 object-contain">
- 
-          <div className="relative p-6">
-            <img  src={imgURL} alt={name} />
-            <p className="mt-2 text-2xl leading-normal text-center text-teal-600 font-bold font-palanquin">
-              {name}
-            </p>
-            <p className="font-montserrat text-xl text-center leading-normal font-semibold text-slate-gray">
-              {designation}
-            </p>
-            <p> {about}</p>
-            <div className="flex flex-row items-center  justify-center mt-8 px-2 gap-4">
-              <img src={Facebook} height={20} width={20} />
-              <img src={Twitter} height={20} width={20} />
-              <img src={Instagram} height={20} width={20} />
-              <img src={Linkedin} height={20} width={20} />
-            </div>
+      <div className=" flex flex-1 flex-col overflow-hidden rounded-xl shadow-md     bg-white text-slate-500 shadow-2xl shadow-slate-200 object-fill">
+        <div className="relative p-6">
+          <img src={imgURL} alt={name} />
+          <p className="mt-2 text-2xl leading-normal text-center text-teal-600 font-bold font-palanquin">
+            {name}
+          </p>
+          <p className="font-montserrat text-xl text-center leading-normal font-semibold text-slate-gray max-sm:hidden">
+            {designation}
+          </p>
+          <p> {about}</p>
+          <div className="flex flex-row items-center  justify-center mt-8 px-2 gap-4">
+            <img src={Facebook} height={20} width={20} />
+            <img src={Twitter} height={20} width={20} />
+            <img src={Instagram} height={20} width={20} />
+            <img src={Linkedin} height={20} width={20} />
           </div>
         </div>
-      
+      </div>
+
       {/* </div> */}
     </>
   );
