@@ -40,7 +40,7 @@ const TeamCard = ({ imgURL, name, designation, about }) => {
        */}
 
       {/* <div className="h-full w-full"> */}
-      <div className=" flex flex-1 flex-col overflow-hidden rounded-xl shadow-md     bg-white text-slate-500 shadow-2xl shadow-slate-200 object-fill">
+      <div className=" flex flex-1 flex-col overflow-hidden rounded-xl shadow-md     bg-white text-slate-500 shadow-2xl shadow-slate-200 flex-wrap h-full">
         <div className="relative p-6">
           <img src={imgURL} alt={name} />
           <p className="mt-2 text-2xl leading-normal text-center text-teal-600 font-bold font-palanquin">
