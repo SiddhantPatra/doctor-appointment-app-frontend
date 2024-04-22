@@ -5,7 +5,7 @@ const TestimonialCards = ({ rating, feedback, customerName, imgURL }) => {
   return (
     <>
       <div
-        className="flex flex-1 flex-col rounded-xl object-fill shadow-lg  p-8 w-full max-sm:w-full  bg-gradient-to-tl from-teal-200 to-lime-200"
+        className="flex flex-1 flex-col rounded-xl object-fill shadow-lg  p-8 w-full max-sm:w-full  bg-gradient-to-tl from-teal-200 to-lime-200 "
         
       >
         <img height={50} width={50} src={imgURL} alt={customerName} />

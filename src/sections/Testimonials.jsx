@@ -40,7 +40,7 @@ const Testimonials = () => {
         >
           {testimonials.map((testimonial) => (
             <SwiperSlide
-              className="flex-wrap h-full w-1/4 my-4   "
+              className="flex-wrap h-full w-1/4 my-4 max-sm:w-3/4  "
               key={testimonial.imgURL}
             >
               <TestimonialCards key={testimonial.imgURL} {...testimonial} />

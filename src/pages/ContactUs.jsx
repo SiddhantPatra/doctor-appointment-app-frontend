@@ -33,9 +33,8 @@ export default function ContactUs() {
             <textarea id="message" name="message" className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-teal-500 focus:bg-white focus:ring-2 focus:ring-teal-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
           </div>
         </div>
-        <div className="p-2 w-full">
-          {/* <button className="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Send</button> */}
-          <Button
+        <div className="p-2 w-full flex justify-around"> 
+          <Button 
                 backgroundColor={"bg-[#007E85]"}
                 textColor={"text-white"}
                 borderColor={"border-[#007E85]"}
