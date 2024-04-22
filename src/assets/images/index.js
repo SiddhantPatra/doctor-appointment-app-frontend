@@ -22,6 +22,7 @@ import user2 from "./user2.svg";
 import user3 from "./user3.svg";
 import man from "./man.png";
 import hospitalimg from "./hospital_img.svg";
+import aaabstract from "./aaabstract.webp";
 
 export {
   headerLogo,
@@ -44,5 +45,5 @@ export {
   user2,
   user3,
   MobileLoginBro,SignUpBro,TabletLoginBro,
-  doc5,man
+  doc5,man,aaabstract
 };
