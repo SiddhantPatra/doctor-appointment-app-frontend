@@ -12,7 +12,7 @@ function Services() {
       {/* <section className="xl:padding-l wide:padding-r ">
         <Hero />
       </section> */}
-      <section className="xl:padding-l wide:padding-r padding-b pt-48">
+      <section className="xl:padding-l wide:padding-r padding-b ">
         <SearchDoc />
       </section>
       <section className="xl:padding-l wide:padding-r padding-b"><DoctorCards/></section>
